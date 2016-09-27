@@ -2,7 +2,7 @@
 ![:image](http://media.tumblr.com/tumblr_mdplu1mnLW1ro2d43.gif)
 
 ###Scenario
-You're a newly minted business consultant who's just snagged a very lucrative client! Congratulations! There's only one catch: neither of you knows what to build or how to build it. 
+You're a newly-minted business consultant who's just snagged a very lucrative client! Congratulations! There's only one catch: neither of you knows what to build or how to build it. 
 
 
 ###Goal
@@ -16,15 +16,18 @@ Our goal is to build **and style** a check-out form, and submit it. Your form MU
   2. As a shopper, I can use the check-out page to further customize my purchase.
   3. As a simulated shopper, I expect submitting the check-out form will take me to a simulated confirmation page that only displays the state of the submitted form.
 
+##TL;DR
+  1. Design a commercial website.
+  2. 
 
 ###Lab Procedure
 In this 3-hour lab, we're going to divide the classroom into a few groups, each consisting of at least 4 people. 
 
 A functioning group should have at least one each of the following:
   1. **a client**: _has the idea/need for the website_
-  2. **a developer**: _builds the website_
-  3. **a researcher**: _does any/all related research tasks_
   4. **a designer**: _produces a functional design and/or wireframe_
+  3. **a researcher**: _does any/all related research tasks_
+  2. **a developer**: _builds the website_
 
 
 ##Round 0:
@@ -36,17 +39,26 @@ Now that we're in groups and since none of us fit the job descriptions above, le
 
 ####The Client
 You'll all start out brainstorming to come up with a hypothetical business.
-  1. What does your business sell? 
+  1. What does your business sell? Footies? Electric cardigans? Full-body wigs?
   2. Why do you need this website?
 
 > Your goal is to present the user with three products. Clicking on one of them will bring the user to the check-out page.
 
-##Round 2:
+##Round 2 (20 minutes):
 ####The Designer
-You'll each collaborate on a design. 
-  1. produce wireframes and preliminary designs
+You'll all collaborate on a design. 
+  1. Design a page that fits your business (Page A).
+  2. Design a checkout page to suit your product (Page B).
+  1. Produce wireframes and preliminary designs.
+  1. https://wireframe.cc/
 
 
-##Round 3:
+##Round 3 (45 minutes):
 ####The Researcher
-Now that you know what you're selling, and how it's going to look, let's do some research
+Now that you know what you're selling, and how it's going to look, let's do some research.
+
+  1. Go to [MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms) and research all the html form controls _that are stable on Safari_.
+  2. Choose 6 that fit your business model and checkout form. 
+
+##Round 4 ()
+
