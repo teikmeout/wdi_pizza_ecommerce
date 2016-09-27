@@ -16,9 +16,10 @@ Our goal is to build **and style** a check-out form, and submit it. Your form MU
   2. As a shopper, I can use the check-out page to further customize my purchase.
   3. As a simulated shopper, I expect submitting the check-out form will take me to a simulated confirmation page that only displays the state of the submitted form.
 
-##TL;DR
-  1. Design a commercial website.
-  2. 
+##Deliverables
+  1. Design and build a commercial website product page.
+  2. Design and build a functioning commercial website checkout page.
+
 
 ###Lab Procedure
 In this 3-hour lab, we're going to divide the classroom into a few groups, each consisting of at least 4 people. 
