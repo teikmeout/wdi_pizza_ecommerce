@@ -1,5 +1,5 @@
 # Welcome Business Consultants!
-![:image](http://media.tumblr.com/tumblr_mdplu1mnLW1ro2d43.gif)
+![:image](./images/tumblr_mdplu1mnLW1ro2d43.gif)
 
 ###Scenario
 You're a newly-minted business consultant who's just snagged a very lucrative client! Congratulations! There's only one catch: neither of you knows what to build or how to build it. 
