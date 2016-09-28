@@ -24,48 +24,19 @@
     <article>
       <!-- action="http://localhost:3000/showForm"  -->
       <!-- file:///Users/admin/code/personal/html-forms-lab/checkout.html -->
-      <form action="http://localhost:3000/showForm" class="list-maker-form" method="post" >
+      <form action="http://localhost:3000/showForm" class="list-maker-form" method="get" >
         <label>Input your name
-          <input list="browsers" name="myName" />
+          <input list="browsers" name="myName"/>
         </label>
 
           <button type="submit">Submit</button>
       </form>
     </article>
-    <aside class="list-output">
-
     </aside>
   </main>
   <footer>
     <h5>Footer</h5>
   </footer>
-<div class = "form">
-  <form action="index_submit" method="post" accept-charset="utf-8">
-    <h2>Choose your Crust</h2>
-      <div id = "thin"><input type="radio" name="thin" value="thin">Thin Crust</div>
-      <div id = "thick"><input type="radio" name="thick" value="thick">Thick Crust</div>
-    <h2>Choose Toppings</h2>
-      <input type="checkbox" name="ingredients" value="Mushrooms">Mushrooms<br>
-      <input type="checkbox" name="ingredients" value="Olives">Olives<br>
-      <input type="checkbox" name="ingredients" value="Bacon">Bacon<br>
-      <input type="checkbox" name="ingredients" value="Pepperoni">Pepperoni<br>
-      <input type="checkbox" name="ingredients" value="Bell Pepper">Bell Pepper<br>
-    <h2>Choose Quantity:</h2>
-    <input type="number" name="points" min="1" max="100">
-    <h2>Choose Amount of Cheese</h2>
-      <p>Zero</p><input type="range" name="points" min="0" max="3" step="1" value="0"><p>A lot</p>
-</form>
-</div>
-<div class="form">
-<form action="index_submit" method="post" accept-charset="utf-8">
-      <h2>Name</h2>
-        <input type="text" name="yourname" placeholder="First and Last Name">
-       <h2>Phone</h2>
-       <input type="tel" name="usertel" placeholder="(+1 (...) -.......">
-       <h2>email</h2>
-       <input type="email" name="email" placeholder="Email here">
-</div>
-</form>
 </body>
 </html>
 
