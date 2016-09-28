@@ -1,7 +1,16 @@
 body {
-background-color: grey;
+/*background-color: grey;*/
+background-image: url("http://i.imgur.com/WXDnPbX.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+font-family: 'BioRhyme', serif;
 }
 .form {
   width: 45%;
   float: left;
+}
+
+h1 {
+  font-size: 6em;
+  text-align: center;
 }
