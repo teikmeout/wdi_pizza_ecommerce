@@ -14,7 +14,6 @@
       <nav>
         <ul>
           <li><a href="#">Main Page</a></li>
-          <li><a href ="#">Checkout Page</a></li>
         </ul>
       </nav>
 </header>
@@ -30,8 +29,8 @@
       </select>
       </div>
     <h2>Choose your Crust</h2>
-      <div id = "thin"><input type="radio" name="thin" value="thin">Thin Crust</div>
-      <div id = "thick"><input type="radio" name="thick" value="thick">Thick Crust</div>
+      <div id = "thin"><input type="radio" name="crust" value="thin">Thin Crust</div>
+      <div id = "thick"><input type="radio" name="crust" value="thick">Thick Crust</div>
     <h2>Choose Toppings</h2>
       <input type="checkbox" name="ingredients" value="Mushrooms">Mushrooms<br>
       <input type="checkbox" name="ingredients" value="Olives">Olives<br>
@@ -54,14 +53,17 @@
         <input id="checkoutFirstLastName" type="text" name="yourName" placeholder="First and Last Name">
         <h2>Address:</h2>
         <input id="streetAddress" type="text" name="userStreetAddress" placeholder="Address"><input id="" type="text" name="" placeholder="Apt."><br>
-        <input id="" type="text" name="" placeholder="City"> <input id="" type="text" name="" placeholder="State"><br>
+        <input id="" type="text" name="" placeholder="City"><input id="" type="text" name="" placeholder="State"><br>
         <input id="" type="text" name="" placeholder="ZipCode">
        <h2>Phone</h2>
        <input id="checkoutUserTelNumber" type="text" name="userTelNumber" placeholder="(+1 (...) -.......">
        <h2>email</h2>
        <input type="email" name="email" placeholder="Email here"><br>
 
-    <input type="button" value="checkout" onclick="submitForms()">
+
+    <input type="button" value="Checkout" onclick="submitForms()">
+
+<br>
      </form>
 </div>
 </div>
