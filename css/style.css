@@ -1,0 +1,108 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 100px;
+  background-color: #222;
+  text-align: center;
+/*  overflow: auto;*/
+}
+
+header h1 {
+  color: white;
+  margin: 0;
+  display: block;
+  float: left;
+  padding-left: 7%;
+  padding-top: 2%;
+}
+
+header nav {
+  float: right;
+}
+
+nav ul {
+  list-style-type: none;
+}
+nav li {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid white;
+  background-color: red;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  height: 110px;
+  background-color: #222;
+  overflow: auto;
+  clear: both;
+}
+main {
+height: 600px;
+background-color: lightgrey;
+overflow: auto;
+text-align: center;
+background-image: url("https://www.magicmurals.com/tools/phpThumb/phpThumb.php?src=/media/catalog/product/F/O/FOT-0039334170_1.jpg&fltr%5B%5D=wmi%7CwatermarkMM2.png%7CB");
+
+/*background-image: url("");*/
+}
+
+.three_pies h2{
+  display: block;
+  clear: both;
+  background-color: black;
+  color: white;
+}
+.pies {
+  margin-top: 5%;
+  margin-left: 35px;
+  width: 400px;
+  height: 400px;
+  overflow: auto;
+  float: left;
+/*  border: 1px solid black;*/
+}
+
+#small_pie {
+  margin: 50px 50px 20px 70px;
+  width: 250px;
+  height: 250px;
+  border: 10px solid black;
+  border-radius: 50%;
+  background-color: orange;
+}
+
+#medium_pie {
+  margin: 30px 20px 10px 25px;
+  width: 300px;
+  height: 300px;
+  border: 10px solid black;
+  border-radius: 50%;
+  background-color: orange;
+  margin-left: 5%;
+}
+
+#large_pie {
+  margin: 10px 0 0 10px;
+  width: 350px;
+  height: 350px;
+  border: 10px solid black;
+  border-radius: 50%;
+  background-color: orange;
+
+}
+
+.form {
+  width: 40%;
+  float: left;
+  overflow: auto;
+  margin-left: 10%;
+}
