@@ -10,17 +10,17 @@ document.addEventListener('DOMContentLoaded', function() {
   var $listForm = document.querySelector('.list-maker-form');
 
   var $homepageSubmit = $('#homepageSubmit');
-  
+
   // $homepageSubmit.click(storeInfo(event));
 
-
+  //this option works for text only
   var name = window.location.search.split('=')[1];
 
   function storeInfo() {
     return name;
   }
 
-  
+  //this option works for the image click
   var first = large = window.location.search.split('=')[1].split('+')[0]
   "large";
   var second = large = window.location.search.split('=')[1].split('+')[1].split('&')[0];
@@ -31,9 +31,9 @@ document.addEventListener('DOMContentLoaded', function() {
     return image;
   }
 
-  $('#formPizzaSize').attr('value', storeImageInfo());
+  $('#formPizzaSize').val('Medium');
 
-  $('#checkoutFirstName').attr('value', storeInfo());  
+  $('#checkoutFirstName').attr('value', storeInfo());
 
 
   submitForms = function(){
