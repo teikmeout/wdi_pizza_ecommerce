@@ -21,15 +21,23 @@
       <form></form>
     </div>
 <div class="three_pies">
+<form action="pizzaCheckout.html" method = "get">
   <h2>Choose your Pizza Size</h2>
   <div class="pies">
-  <div id="small_pie"><img src="images/pizza.png" width="250px"></div>
+  <form action="pizzaCheckout.html" method = "get">
+  <div id="small_pie"><input type='hidden' name='size' value='small'><input type='image' src='images/pizza.png' width = '250px'></div>
+  </form>
   </div>
   <div class="pies">
-  <div id="medium_pie"><img src="images/pizza.png" width="300px"><</div>
+  <form action="pizzaCheckout.html" method = "get">
+  <div id="medium_pie"><input type='hidden' name='size' value='medium'><input type='image' src='images/pizza.png' width = '300px'></div>
+  </form>
   </div>
   <div class="pies">
-  <div id="large_pie"><img src="images/pizza.png" width="350px"><</div>
+<form action="pizzaCheckout.html" method = "get">
+  <!-- <div id="large_pie"><a href="pizzaCheckout.html"><img src="images/pizza.png" width="350px"></a></div> -->
+  <div id="large_pie"><input type='hidden' name='size' value='large'><input type='image' src='images/pizza.png' width = '350px'></div>
+  </form>
   </div>
 </div>
   </main>
