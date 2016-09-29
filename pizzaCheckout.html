@@ -9,83 +9,90 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" charset="utf-8"></script>
   <script src="js/app.js"></script>
 </head>
+
 <body>
-<header>
-  <h1>Pies In The Sky</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Main Page</a></li>
-        </ul>
-      </nav>
-</header>
-<div class="main2">
-<div class = "form">
-  <form class="list-maker-form" action="http://localhost:3000/showForm" method="post">
-    <h2>Size you chose</h2>
-      <div id = 'size'>
-      <select name='size you chose'>
-        <option value='large'>Large</option>
-        <option value='medium'>Medium</option>
-        <option value='small'>Small</option>
-      </select>
-      </div>
-    <h2>Choose your Crust</h2>
-      <label>
-        <div id="thin"><input type="radio" name="crust" value="thin">Thin Crust</div>
+  <header>
+    <h1>Pies In The Sky</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Main Page</a></li>
+          </ul>
+        </nav>
+  </header>
+  
+  <div class="main2">
+  <div class = "form">
+    <form class="list-maker-form" action="http://localhost:3000/showForm" method="post">
+      <h2>Size you chose</h2>
+        <div id = 'size'>
+        <select name='size you chose'>
+          <option value='large'>Large</option>
+          <option value='medium'>Medium</option>
+          <option value='small'>Small</option>
+        </select>
+        </div>
+      
+      <h2>Choose your Crust</h2>
+        <label>
+          <div id="thin"><input type="radio" name="crust" value="thin">Thin Crust</div>
+        </label>
+        <label>
+          <div id="thick"><input type="radio" name="crust" value="thick">Thick Crust</div>
+        </label>
+      
+      <h2>Choose Toppings</h2>
+        <label>
+          <input type="checkbox" id="mushrooms" name="ingredients" value="Mushrooms">Mushrooms<br>
+        </label>
+        <label>
+          <input type="checkbox" name="ingredients" value="Olives">Olives<br>
+        </label>
+        <label>
+          <input type="checkbox" name="ingredients" value="Bacon">Bacon<br>
+        </label>
+        <label>
+          <input type="checkbox" name="ingredients" value="Pepperoni">Pepperoni<br>
+        </label>
+        <label>
+          <input type="checkbox" name="ingredients" value="Bell Pepper">Bell Pepper<br>
+        </label>
+        <div class="amounts">
       </label>
-      <label>
-        <div id="thick"><input type="radio" name="crust" value="thick">Thick Crust</div>
-      </label>
-    <h2>Choose Toppings</h2>
-      <label>
-        <input type="checkbox" id="mushrooms" name="ingredients" value="Mushrooms">Mushrooms<br>
-      </label>
-      <label>
-        <input type="checkbox" name="ingredients" value="Olives">Olives<br>
-      </label>
-      <label>
-        <input type="checkbox" name="ingredients" value="Bacon">Bacon<br>
-      </label>
-      <label>
-        <input type="checkbox" name="ingredients" value="Pepperoni">Pepperoni<br>
-      </label>
-      <label>
-        <input type="checkbox" name="ingredients" value="Bell Pepper">Bell Pepper<br>
-      </label>
-    <div class="amounts">
-</label>
-    <h2>Choose Quantity:</h2>
-    <input type="number" name="points" min="1" max="100">
-    <h2>Choose Amount of Cheese</h2>
-      <p>Just a bit</p><input type="range" name="points" min="0" max="2" step="1" value="0"><p>Very cheesy</p>
-    <h2>Choose Amount of Sauce</h2>
-      <p>A drizzle</p><input id="sauce" type="range" name="points" min="0" max="2" step="1" value="0"><p>A heap</p>
-      </div>
 
-</div>
-<div class="form">
-      <h2>Name:</h2>
-        <input id="checkoutFirstLastName" type="text" name="yourName" placeholder="First and Last Name">
-        <h2>Address:</h2>
-        <input id="streetAddress" type="text" name="userStreetAddress" placeholder="Address"><input id="" type="text" name="" placeholder="Apt."><br>
-        <input id="" type="text" name="" placeholder="City"><input id="" type="text" name="" placeholder="State"><br>
-        <input id="" type="text" name="" placeholder="ZipCode">
-       <h2>Phone</h2>
-       <input id="checkoutUserTelNumber" type="text" name="userTelNumber" placeholder="(+1 (...) -.......">
-       <h2>email</h2>
-       <input type="email" name="email" placeholder="Email here"><br>
+      <h2>Choose Quantity:</h2>
+        <input type="number" name="points" min="1" max="100">
+      
+      <h2>Choose Amount of Cheese</h2>
+        <p>Just a bit</p><input type="range" name="points" min="0" max="7" step="1" value="0"><p>Very cheesy</p>
+      
+      <h2>Choose Amount of Sauce</h2>
+        <p>A drizzle</p><input id="sauce" type="range" name="points" min="0" max="7" step="1" value="0"><p>A heap</p>
+        </div>
+  </div>
 
-       <h2>Pickup</h2>
+  <div class="form">
+    <h2>Name:</h2>
+      <input id="checkoutFirstLastName" type="text" name="yourName" placeholder="First and Last Name">
+      <h2>Address:</h2>
+      <input id="streetAddress" type="text" name="userStreetAddress" placeholder="Address"><input id="" type="text" name="" placeholder="Apt."><br>
+      <input id="" type="text" name="" placeholder="City"><input id="" type="text" name="" placeholder="State"><br>
+      <input id="" type="text" name="" placeholder="ZipCode">
+     <h2>Phone</h2>
+     <input id="checkoutUserTelNumber" type="text" name="userTelNumber" placeholder="(+1 (...) -.......">
+     <h2>email</h2>
+     <input type="email" name="email" placeholder="Email here"><br>
+
+     <h2>Pickup</h2>
       <p><input type="radio" name="gluten">Yes</p>
       <p><input type="radio" name="gluten">No</p><br>
     
-    <br>
-      <input id="submit_btn" type="button" value="Checkout"/>
-    <br>
-   
-   </form>
-</div>
-</div>
+      <br>
+        <input id="submit_btn" type="submit" value="Checkout"/>
+      <br>
+     </form>
+    </div>
+  </div>
+  
   <footer>
     <h5>Footer</h5>
   </footer>
