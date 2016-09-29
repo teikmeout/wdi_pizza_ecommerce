@@ -1,3 +1,9 @@
+// move global variables and functions outside the 'domcontentloaded' event listener
+
+// use strict - consider implementing this later when code is done
+
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
   console.log('this is after the dom loaded');
@@ -9,16 +15,35 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   var name = window.location.search.split('=')[1];
-  
 
   function storeInfo() {
     return name;
   }
 
-  storeInfo();
-
-  $('#checkoutFirstName').attr('value', storeInfo());
   
+  var first = large = window.location.search.split('=')[1].split('+')[0]
+  "large";
+  var second = large = window.location.search.split('=')[1].split('+')[1].split('&')[0];
+
+  var image = first + " " + second;
+
+  function storeImageInfo() {
+    return image;
+  }
+
+  $('#formPizzaSize').attr('value', storeImageInfo());
+
+  $('#checkoutFirstName').attr('value', storeInfo());  
+
+
+  submitForms = function(){
+    document.getElementById("form1").submit();
+    document.getElementById("form2").submit();
+}
+
+// onclick="submitForms()
+
+
 });
 
 
