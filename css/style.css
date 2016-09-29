@@ -107,3 +107,6 @@ background-image: url("https://www.magicmurals.com/tools/phpThumb/phpThumb.php?s
   margin-left: 10%;
 }
 
+input {
+  padding: 5px;
+}
