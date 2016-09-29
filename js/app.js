@@ -1,10 +1,3 @@
-// move global variables and functions outside the 'domcontentloaded' event listener
-
-// use strict - consider implementing this later when code is done
-
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
   console.log('this is after the dom loaded');
   var $listForm = document.querySelector('.list-maker-form');
@@ -20,18 +13,14 @@ document.addEventListener('DOMContentLoaded', function() {
     return name;
   }
 
-  
-  var first = large = window.location.search.split('=')[1].split('+')[0]
-  "large";
-  var second = large = window.location.search.split('=')[1].split('+')[1].split('&')[0];
 
-  var image = first + " " + second;
+  var image = window.location.search.split('=')[1].match(/[a-zA-Z]+/)[0];
 
   function storeImageInfo() {
     return image;
   }
 
-  $('#formPizzaSize').attr('value', storeImageInfo());
+
 
   $('#checkoutFirstName').attr('value', storeInfo());  
 
@@ -39,13 +28,22 @@ document.addEventListener('DOMContentLoaded', function() {
   submitForms = function(){
     document.getElementById("form1").submit();
     document.getElementById("form2").submit();
-}
+  }
 
 
+  function whatSize() {
+    if (storeImageInfo() === 'small') {
+      $('#size select [value=small]').attr('selected', 'selected');
+    } else if (storeImageInfo() === 'medium') {
+      $('#size select [value=medium]').attr('selected', 'selected');
+    } else {
+      $('#size select [value=large]').attr('selected', 'selected');
+    }
+  }
 
+  whatSize();
 
 });
-
 
 console.log('this is before the dom loaded');
 

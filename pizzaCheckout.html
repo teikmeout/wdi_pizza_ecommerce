@@ -29,15 +29,30 @@
       </select>
       </div>
     <h2>Choose your Crust</h2>
-      <div id = "thin"><input type="radio" name="crust" value="thin">Thin Crust</div>
-      <div id = "thick"><input type="radio" name="crust" value="thick">Thick Crust</div>
+      <label>
+        <div id="thin"><input type="radio" name="crust" value="thin">Thin Crust</div>
+      </label>
+      <label>
+        <div id="thick"><input type="radio" name="crust" value="thick">Thick Crust</div>
+      </label>
     <h2>Choose Toppings</h2>
-      <input type="checkbox" name="ingredients" value="Mushrooms">Mushrooms<br>
-      <input type="checkbox" name="ingredients" value="Olives">Olives<br>
-      <input type="checkbox" name="ingredients" value="Bacon">Bacon<br>
-      <input type="checkbox" name="ingredients" value="Pepperoni">Pepperoni<br>
-      <input type="checkbox" name="ingredients" value="Bell Pepper">Bell Pepper<br>
-  <div class="amounts">
+      <label>
+        <input type="checkbox" id="mushrooms" name="ingredients" value="Mushrooms">Mushrooms<br>
+      </label>
+      <label>
+        <input type="checkbox" name="ingredients" value="Olives">Olives<br>
+      </label>
+      <label>
+        <input type="checkbox" name="ingredients" value="Bacon">Bacon<br>
+      </label>
+      <label>
+        <input type="checkbox" name="ingredients" value="Pepperoni">Pepperoni<br>
+      </label>
+      <label>
+        <input type="checkbox" name="ingredients" value="Bell Pepper">Bell Pepper<br>
+      </label>
+    <div class="amounts">
+</label>
     <h2>Choose Quantity:</h2>
     <input type="number" name="points" min="1" max="100">
     <h2>Choose Amount of Cheese</h2>
@@ -62,9 +77,8 @@
 
 
     <input type="button" value="Checkout" onclick="submitForms()">
-
-<br>
-     </form>
+    <br>
+    </form>
 </div>
 </div>
   <footer>
