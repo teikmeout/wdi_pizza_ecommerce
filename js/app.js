@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var $listForm = document.querySelector('.list-maker-form');
 
   var $homepageSubmit = $('#homepageSubmit');
-  
+
   // $homepageSubmit.click(storeInfo(event));
 
 
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     return name;
   }
 
-  
+
   var first = large = window.location.search.split('=')[1].split('+')[0]
   "large";
   var second = large = window.location.search.split('=')[1].split('+')[1].split('&')[0];
@@ -33,13 +33,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
   $('#formPizzaSize').attr('value', storeImageInfo());
 
-  $('#checkoutFirstName').attr('value', storeInfo());  
+  $('#checkoutFirstName').attr('value', storeInfo());
 
 
-  submitForms = function(){
-    document.getElementById("form1").submit();
-    document.getElementById("form2").submit();
-}
+//   submitForms = function(){
+//     document.getElementById("form1").submit();
+//     document.getElementById("form2").submit();
+// }
 
 
 
