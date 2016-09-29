@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("form2").submit();
 }
 
-// onclick="submitForms()
+
 
 
 });
