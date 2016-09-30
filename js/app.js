@@ -36,9 +36,9 @@ document.addEventListener('DOMContentLoaded', function() {
   $('#checkoutFirstName').attr('value', storeInfo());
 
 
-  submitForms = function(){
-    document.getElementById("form1").submit();
-    document.getElementById("form2").submit();
+function sumbitForms() {
+    $('form').eq(0).submit();
+    $('form').eq(1).submit();
 }
 
 

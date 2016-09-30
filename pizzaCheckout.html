@@ -19,7 +19,7 @@
 </header>
 <div class="main2">
 <div class = "form">
-  <form action="index_submit" method="post" accept-charset="utf-8">
+  <form class="list-maker-form" action="http://localhost:3000/showForm" method="post">
     <h2>Size you chose</h2>
       <div id = 'size'>
       <select name='size you chose'>
@@ -45,10 +45,10 @@
     <h2>Choose Amount of Sauce</h2>
       <p>a drizzle</p><input type="range" name="points" min="0" max="2" step="1" value="0"><p>a heap</p>
       </div>
-</form>
+
 </div>
 <div class="form">
-<form class="list-maker-form" action="http://localhost:3000/showForm" method="post">
+
       <h2>Name</h2>
         <input id="checkoutFirstLastName" type="text" name="yourName" placeholder="First and Last Name">
         <h2>Address:</h2>
@@ -61,7 +61,7 @@
        <input type="email" name="email" placeholder="Email here"><br>
 
 
-    <input type="button" value="Checkout" onclick="submitForms()">
+    <input type="submit" value="Checkout"/>
 
 <br>
      </form>
