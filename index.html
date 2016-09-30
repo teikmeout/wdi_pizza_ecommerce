@@ -5,41 +5,47 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title></title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=BioRhyme">
 </head>
 <body>
   <header>
-  <h1>Whatever Somenthing Pizza</h1>
+  <h1>Pies in the Sky</h1>
       <nav>
         <ul>
-          <li><a href="#">Main Page</a></li>
-          <li><a href ="#">Checkout Page</a></li>
+          <li><a href="index.html">Main Page</a></li>
+          <li><a href ="pizzaCheckout.html">Checkout Page</a></li>
         </ul>
       </nav>
   </header>
+  
   <main>
     <div class="forms">
       <form></form>
     </div>
-<div class="three_pies">
-<form action="pizzaCheckout.html" method = "get">
-  <h2>Choose your Pizza Size</h2>
-  <div class="pies">
-  <form action="pizzaCheckout.html" method = "get">
-  <div id="small_pie"><input type='hidden' name='size' value='small'><input type='image' src='images/pizza.png' width = '250px'></div>
-  </form>
+
+  <div class="three_pies">
+    <form action="pizzaCheckout.html" method = "get">
+      <h2>Choose your Pizza Size</h2>
+      
+      <div class="pies">
+      <form action="pizzaCheckout.html" method = "get">
+        <div id="small_pie"><input type='hidden' name='size' value='small'><input id="small_p" type='image' src='images/pizza.png' width = '250px'></div>
+      </form>
+      </div>
+      
+      <div class="pies">
+      <form action="pizzaCheckout.html" method = "get">
+        <div id="medium_pie"><input type='hidden' name='size' value='medium'><input id="medium_p" type='image' src='images/pizza.png' width = '300px'></div>
+      </form>
+      </div>
+      
+      <div class="pies">
+        <form action="pizzaCheckout.html" method = "get">
+          <div id="large_pie"><input type='hidden' name='size' value='large'><input id="large_p" type='image' src='images/pizza.png' width = '350px'></div>
+        </form>
+      </div>
   </div>
-  <div class="pies">
-  <form action="pizzaCheckout.html" method = "get">
-  <div id="medium_pie"><input type='hidden' name='size' value='medium'><input type='image' src='images/pizza.png' width = '300px'></div>
-  </form>
-  </div>
-  <div class="pies">
-<form action="pizzaCheckout.html" method = "get">
-  <!-- <div id="large_pie"><a href="pizzaCheckout.html"><img src="images/pizza.png" width="350px"></a></div> -->
-  <div id="large_pie"><input type='hidden' name='size' value='large'><input type='image' src='images/pizza.png' width = '350px'></div>
-  </form>
-  </div>
-</div>
+
   </main>
   <footer></footer>
 </body>

@@ -1,5 +1,6 @@
-// move global variables and functions outside the 'domcontentloaded' event listener
+var $listForm = document.querySelector('.list-maker-form');
 
+<<<<<<< HEAD
 // use strict - consider implementing this later when code is done
 
 
@@ -26,10 +27,23 @@ document.addEventListener('DOMContentLoaded', function() {
   var second = large = window.location.search.split('=')[1].split('+')[1].split('&')[0];
 
   var image = first + " " + second;
+=======
+// store image selection via get
+var image = window.location.search.split('=')[1].match(/[a-zA-Z]+/)[0];
+function storeImageInfo() {
+  return image;
+}
+>>>>>>> 87e6eb5506d6f637c18da84f66338745c4cfeaa5
 
-  function storeImageInfo() {
-    return image;
+function whatSize() {
+  if (storeImageInfo() === 'small') {
+    $('#size select [value=small]').attr('selected', 'selected');
+  } else if (storeImageInfo() === 'medium') {
+    $('#size select [value=medium]').attr('selected', 'selected');
+  } else {
+    $('#size select [value=large]').attr('selected', 'selected');
   }
+<<<<<<< HEAD
 
   $('#formPizzaSize').val('Medium');
 
@@ -39,39 +53,13 @@ document.addEventListener('DOMContentLoaded', function() {
 function sumbitForms() {
     $('form').eq(0).submit();
     $('form').eq(1).submit();
+=======
+>>>>>>> 87e6eb5506d6f637c18da84f66338745c4cfeaa5
 }
 
-
-
-
-});
-
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('this is after the dom loaded');
+  whatSize();
+})
 
 console.log('this is before the dom loaded');
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // var $serial = $('form').serialize();
-  // console.log($serial);
-
-
-// function httpGet(theUrl)
-// {
-//     var xmlHttp = new XMLHttpRequest();
-//     xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
-//     xmlHttp.send( null );
-//     return xmlHttp.responseText;
-// }
-
-
-
